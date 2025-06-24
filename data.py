@@ -39,4 +39,4 @@ df["t_avg_s"] = df[["time_trial1_s","time_trial2_s","time_trial3_s"]].mean(axis=
 df["t_avg_s_sqr"]=df["t_avg_s"]**2
 pd_data_100g = df[['height_m', 't_avg_s_sqr']]
 
-
+# Pt2
