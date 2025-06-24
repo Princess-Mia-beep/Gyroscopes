@@ -27,12 +27,12 @@ data_100g = {
 df = pd.DataFrame(data_10g)
 df["t_avg_s"] = df[["time_trial1_s","time_trial2_s","time_trial3_s"]].mean(axis=1)
 df["t_avg_s_sqr"]=df["t_avg_s"]**2
-pd_data_100g = df[['height_m', 't_avg_s_sqr']]
+pd_data_10g = df[['height_m', 't_avg_s_sqr']]
 
 df = pd.DataFrame(data_70g)
 df["t_avg_s"] = df[["time_trial1_s","time_trial2_s","time_trial3_s"]].mean(axis=1)
 df["t_avg_s_sqr"]=df["t_avg_s"]**2
-pd_data_70g = summary_df = df[['height_m', 't_avg_s_sqr']]
+pd_data_70g = df[['height_m', 't_avg_s_sqr']]
 
 df = pd.DataFrame(data_100g)
 df["t_avg_s"] = df[["time_trial1_s","time_trial2_s","time_trial3_s"]].mean(axis=1)
